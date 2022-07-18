@@ -19,6 +19,8 @@
   ],
   "author": "Mateus Figueiredo Pereira",
   "license": "MIT",
+  "repository": "https://github.com/kirodoras/kiro-project",
+  "homepage": "https://github.com/kirodoras/kiro-project",
   "dependencies": {
     "arg": "^5.0.2",
     "chalk": "^4.1.2",
