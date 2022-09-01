@@ -1,0 +1,5 @@
+/node_modules
+/src/valex
+.env
+.vscode
+/dist

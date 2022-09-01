@@ -1,28 +1,34 @@
 # `kiro-project`
 *This is a cli to automate the installation and organize code through templates*
-## Usage
-### 1 - **Express with mongo**
+## Usage - First: create your project folder and inside it use one of the commands below 
+### 1 - **Express with Typescript**
 
 ```bash
-npx kiro-project expressmongo -y -i
+ npx kiro-project typescript -y -i -g
 ```
 
 template:
 <div>
-    <img src="./readme_assets/template_expressmongo.png" />
+    <img src="./readme_assets/template_expresstypescript.png" />
 </div>
 
 
 ### 2 - **Only express**
 
 ```bash
-npx kiro-project express -y -i
+npx kiro-project express -y -i -g
 ```
 template:
 <div>
     <img src="./readme_assets/template_express.png" width="180"/>
 </div>
 
+## Commands
+| Abbr | Command |
+|---|---|
+| -g | --git |
+| -i | --install |
+| -y | --yes |
 ## License
 
 MIT
