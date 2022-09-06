@@ -7,14 +7,19 @@ export function errorHandler(
   next: NextFunction
 ) {
   console.log(error);
+  const { message, type } = error;
 
-  if (error.type === "conflict") {
-    return res.sendStatus(409);
+  if (type === "conflict") {
+    return res.status(409).send(message ? message : "Conflict");
   }
-  if (error.type === "not_found") {
-    return res.sendStatus(404);
+  if (type === "not_found") {
+    return res.status(404).send(message ? message : "Not found");
   }
-  if (error.type === "unauthorized") return res.sendStatus(401);
-
+  if (type === "unauthorized") {
+    return res.status(401).send(message ? message : "Unauthorized");
+  }
+  if (type === "unprocessable_entity") {
+    return res.status(422).send(message ? message : "Unprocessable entity");
+  }
   res.sendStatus(500);
 }
