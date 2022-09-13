@@ -1,7 +1,12 @@
 import { NextFunction, Request, Response } from "express";
 
+interface ErrorObject extends Error {
+  type: string;
+  message: string;
+}
+
 export function errorHandler(
-  error: any,
+  error: ErrorObject,
   req: Request,
   res: Response,
   next: NextFunction

@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-	  "start": "node dist/app.js",
-    "dev": "npx nodemon ./src/app.ts"
+    "build": "tsc && npx prisma migrate deploy",
+    "start": "node dist/app.js",
+    "dev": "npx nodemon ./src/app.ts",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
