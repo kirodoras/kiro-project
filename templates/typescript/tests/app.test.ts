@@ -16,6 +16,6 @@ describe("GET /", () => {
 });
 
 afterAll(() => {
-    // essa função será executada ao final de todos os testes
-    //await prisma.$disconnect();
+  // essa função será executada ao final de todos os testes
+  //await prisma.$disconnect();
 });
