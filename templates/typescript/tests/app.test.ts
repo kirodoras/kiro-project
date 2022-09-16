@@ -1,9 +1,9 @@
 import app from "../src/app";
 import supertest from "supertest";
 
-beforeEach(() => {
+beforeEach(async () => {
   // essa função será executada antes de cada it() rodar
-  //await prisma.$executeRaw`TRUNCATE TABLE receitas;`;
+  //await prisma.$executeRaw`TRUNCATE TABLE [TABLE_NAME]`;
 });
 
 describe("GET /", () => {
@@ -15,7 +15,7 @@ describe("GET /", () => {
   });
 });
 
-afterAll(() => {
+afterAll(async () => {
   // essa função será executada ao final de todos os testes
   //await prisma.$disconnect();
 });
