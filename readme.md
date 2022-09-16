@@ -1,7 +1,7 @@
 # `kiro-project`
 *This is a cli to automate the installation and organize code through templates*
 ## Usage - First: create your project folder and inside it use one of the commands below 
-### 1 - **Express + Typescript + Jest + Supertest + Eslint**
+### 1 - **Express + Typescript + Prisma + Jest + Supertest + Eslint**
 
 ```bash
  npx kiro-project typescript -y -i -g
