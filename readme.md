@@ -1,5 +1,9 @@
 # `kiro-project`
 *This is a cli to automate the installation and organize code through templates*
+<div>
+    <img src="https://img.shields.io/npm/dy/kiro-project?style=for-the-badge" />
+</div>
+
 ## Usage - First: create your project folder and inside it use one of the commands below 
 ### 1 - **Express + Typescript + Prisma + Jest + Supertest + Eslint**
 
